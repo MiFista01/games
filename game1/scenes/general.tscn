@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scripts/general.gd" type="Script" id=1]
+[ext_resource path="res://scenes/circle.tscn" type="PackedScene" id=2]
+
+[node name="general" type="Node2D"]
+script = ExtResource( 1 )
+circle = ExtResource( 2 )
+
+[node name="pos" type="Position2D" parent="."]

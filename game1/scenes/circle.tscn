@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://imgs/circle.png" type="Texture" id=1]
+[ext_resource path="res://scripts/circle.gd" type="Script" id=2]
+
+[node name="circle" type="RigidBody2D"]
+gravity_scale = 0.0
+script = ExtResource( 2 )
+
+[node name="Circle" type="Sprite" parent="."]
+texture = ExtResource( 1 )
