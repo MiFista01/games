@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Relax_Music_Chill_Music_Beat_-_Beat_to_Relax_(musmore.com).mp3-d70f91f5f238d9cc25d211a6291dd06d.mp3str"
+
+[deps]
+
+source_file="res://music/Relax_Music_Chill_Music_Beat_-_Beat_to_Relax_(musmore.com).mp3"
+dest_files=[ "res://.import/Relax_Music_Chill_Music_Beat_-_Beat_to_Relax_(musmore.com).mp3-d70f91f5f238d9cc25d211a6291dd06d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

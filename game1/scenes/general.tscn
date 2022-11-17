@@ -1,10 +1,22 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scripts/general.gd" type="Script" id=1]
 [ext_resource path="res://scenes/circle.tscn" type="PackedScene" id=2]
+[ext_resource path="res://imgs/1642765189_2-phonoteka-org-p-fon-temno-sinii-gradient-3.jpg" type="Texture" id=3]
+[ext_resource path="res://music/Relax_Music_Chill_Music_Beat_-_Beat_to_Relax_(musmore.com).mp3" type="AudioStream" id=4]
 
 [node name="general" type="Node2D"]
 script = ExtResource( 1 )
 circle = ExtResource( 2 )
 
 [node name="pos" type="Position2D" parent="."]
+
+[node name="16427651892-phonoteka-org-p-fon-temno-sinii-gradient-3" type="Sprite" parent="."]
+position = Vector2( 554, 285 )
+texture = ExtResource( 3 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 500, 277 )
+stream = ExtResource( 4 )
+volume_db = 10.0
+autoplay = true

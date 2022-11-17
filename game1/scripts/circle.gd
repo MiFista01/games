@@ -1,16 +1,16 @@
 extends RigidBody2D
 
+var rng = RandomNumberGenerator.new()
+#func _on_circle_ready():
+#	rng.randomize()
+#	var color = Color()
+#	color.r8 = rng.randi_range(200,255)
+#	color.g8 = rng.randi_range(200,255)
+#	color.b8 = rng.randi_range(200,255)
+#	get_node(".").modulate = color
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	get_node(".").linear_velocity
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	if get_node(".").position.x < 0 or get_node(".").position.x > get_viewport().size.x:
+		queue_free()
+	if get_node(".").position.y > get_viewport().size.y:
+		queue_free()
